@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Visualization Dashboard</title>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <h1>Data Visualization Dashboard</h1>
+    <div class="filters">
+      <button class="filter" id="filter1">Data Set 1</button>
+      <button class="filter" id="filter2">Data Set 2</button>
+      <button class="filter" id="filter3">Data Set 3</button>
+    </div>
+      <div class="filters">
+          <label for="chart-type-select">Chart Type:</label>
+          <select id="chart-type-select">
+            <option value="line" selected>Line</option>
+            <option value="bar">Bar</option>
+          </select>
+        
+          <label for="color-picker">Color:</label>
+          <input type="color" id="color-picker" value="#5d5d5d">
+        </div>
+        
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+  
+<script src="test.js"></script>
+</body>
+</html>
